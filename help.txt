@@ -9,7 +9,9 @@ git add .
 >>
 git remote add base https://gitlab.com/dohome-2020/starter.git
 git fetch base
-git merge base/master --allow-unrelated-histories 
+git merge base/api-authen --allow-unrelated-histories 
+git merge base/api-worker --allow-unrelated-histories 
+git merge base/web-back --allow-unrelated-histories 
 git remote remove base
 >> 
 https://stackoverflow.com/questions/34100048/create-empty-branch-on-github
