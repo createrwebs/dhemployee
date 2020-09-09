@@ -15,3 +15,8 @@ git merge base/web-back --allow-unrelated-histories
 git remote remove base
 >> 
 https://stackoverflow.com/questions/34100048/create-empty-branch-on-github
+git checkout --orphan empty
+git rm -rf .
+git commit --allow-empty -m "root commit"
+git push origin empty
+>>
