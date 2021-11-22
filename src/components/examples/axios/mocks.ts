@@ -1,4 +1,4 @@
-import nock from "nock";
+
 
 export const mockResponse = [
     {
@@ -9,6 +9,3 @@ export const mockResponse = [
     },
 ];
 
-nock("https://official-joke-api.appspot.com")
-    .get("/jokes/programming/random")
-    .reply(200, mockResponse);
